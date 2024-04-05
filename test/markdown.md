@@ -11,3 +11,8 @@
 8. Pulling the chin with arms on the back of the neck 20s 2 times
 9. Looking up with the arms on the ears 20 times
 10. Looking up with the chest open 10s 2 times
+
+```mermaid
+flowchart LR
+	a —> b
+```
