@@ -35,7 +35,11 @@ function App() {
   }, []);
 
   return (
-    <div className="reveal" ref={deckDivRef}>
+    <div
+      className="reveal"
+      ref={deckDivRef}
+      style={{ width: "100vw", height: "100vh" }}
+    >
       <div className="slides">
         <section>Slide 1</section>
         <section>Slide 2</section>
