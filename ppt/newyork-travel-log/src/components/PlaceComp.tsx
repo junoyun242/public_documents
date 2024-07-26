@@ -2,6 +2,7 @@ import { FC, ReactNode } from "react";
 
 interface PropTypes {
   name: string;
+  subtitle?: string;
   address: string;
   date: string;
   time: string;
@@ -14,6 +15,7 @@ interface PropTypes {
 
 const PlaceComp: FC<PropTypes> = ({
   name,
+  subtitle,
   address,
   date,
   time,
@@ -26,18 +28,19 @@ const PlaceComp: FC<PropTypes> = ({
   return (
     <section className="two-page-layout" id={id}>
       <h2>{name}</h2>
+      {subtitle && <h3>{subtitle}</h3>}
       <div className="meta-data">
         <p>{address}</p>
         <p>
           {date} {time}
         </p>
       </div>
-      <div className="content">
-        <div>{children}</div>
+      <main>
+        <div className="text-xs">{children}</div>
         <div>
           <img width={imgWidth} height={imgHeight} src={imgUrl} />
         </div>
-      </div>
+      </main>
     </section>
   );
 };

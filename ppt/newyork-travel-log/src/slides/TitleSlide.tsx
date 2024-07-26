@@ -3,7 +3,7 @@ const TitleSlide = () => {
     <section className="centered-layout">
       <div>
         <h2>Trip to New York</h2>
-        <p className="text-sm" style={{ fontWeight: "bold" }}>
+        <p className="text-xs" style={{ fontWeight: "bold" }}>
           2024-08-10 ~ 2024-08-23
         </p>
         <img
