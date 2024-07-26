@@ -39,7 +39,7 @@
 
 .two-page-layout .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   width: 100%;
   font-size: 30px;
 }
