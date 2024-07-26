@@ -20,7 +20,6 @@ function App() {
     deckRef.current = new Reveal(deckDivRef.current!, {
       transition: "slide",
       center: false,
-      slideNumber: true,
     });
 
     deckRef.current.initialize({ plugins: [RevealNote] }).then(() => {});

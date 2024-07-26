@@ -9,6 +9,8 @@ const JFKSample = () => {
     <>
       <PlaceComp
         name="JFK Airport"
+        rating={5}
+        subtitle="Queens"
         address="Queens, NY 11430, United States"
         date={EDate.first}
         time="09:00"

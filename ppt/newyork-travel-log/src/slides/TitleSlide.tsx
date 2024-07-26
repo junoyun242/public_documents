@@ -8,7 +8,6 @@ const TitleSlide = () => {
         </p>
         <img
           width={300}
-          height={300}
           src="https://www.state.gov/wp-content/uploads/2022/01/shutterstock_248799484-scaled.jpg"
         />
       </div>

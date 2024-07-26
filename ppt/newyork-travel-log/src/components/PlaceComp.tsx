@@ -1,7 +1,9 @@
 import { FC, ReactNode } from "react";
+import StarRating from "./StarRating";
 
 interface PropTypes {
   name: string;
+  rating?: number;
   subtitle?: string;
   address: string;
   date: string;
@@ -15,6 +17,7 @@ interface PropTypes {
 
 const PlaceComp: FC<PropTypes> = ({
   name,
+  rating,
   subtitle,
   address,
   date,
@@ -27,7 +30,9 @@ const PlaceComp: FC<PropTypes> = ({
 }) => {
   return (
     <section className="two-page-layout" id={id}>
-      <h2>{name}</h2>
+      <h2>
+        {name} {typeof rating !== "undefined" && <StarRating rating={rating} />}
+      </h2>
       {subtitle && <h3>{subtitle}</h3>}
       <div className="meta-data">
         <p>{address}</p>
